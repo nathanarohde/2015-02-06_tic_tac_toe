@@ -1,0 +1,7 @@
+development:
+  database: tic_tac_toe_development
+  adapter: postgresql
+
+test:
+  database: tic_tac_toe_test
+  adapter: postgresql
