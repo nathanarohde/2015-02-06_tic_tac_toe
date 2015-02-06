@@ -1,6 +1,10 @@
 require'spec_helper'
 
 describe(Game) do
+  it {should have_many :players}
+  it {should have_one :board}
+end
+
   describe'#start_up' do
     it'Checks to see if game creates two players on start up.' do
       new_game = Game.create({})
@@ -11,6 +15,4 @@ describe(Game) do
       new_game = Game.create({})
       expect(Board.all.length).to(eq(1))
     end
-    
   end
-end
